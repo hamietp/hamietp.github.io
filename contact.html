@@ -25,9 +25,22 @@
                 var email = document.getElementById('email');
                 localStorage.setItem('email',email.value);
             }
+            function saveTel()
+            {
+                var telephone_number = document.getElementById('telephone_number');
+                localStorage.setItem('telephone_number',telephone_number.value);
+            }
+            function saveMessage()
+            {
+                var textarea1 = document.getElementById('textarea1');
+                localStorage.setItem('textarea1',textarea1.value);
+            }
+
+            saveMessage();
             saveName();
             saveLastName();
             saveEmail();
+            saveTel();
         }
 
         function displayName()
@@ -69,7 +82,7 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="Telephone number" type="tel" class="validate" maxlength="11" placeholder="(01) 91234-5678">
+                        <input id="telephone_number" type="tel" class="validate" maxlength="11" placeholder="(01) 91234-5678">
                         <label for="Telephone number">Telephone Number</label>
                     </div>
                 </div>
